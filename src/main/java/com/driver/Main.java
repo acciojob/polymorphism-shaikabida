@@ -9,20 +9,19 @@ public class Main
 		double method3=p.product(6,7);
 		System.out.print(method1+" "+method2+" "+method3);
 	}
+    public static class Product{
+        public int product(int x,int y) {
+            int prod=x*y;
+            return prod;
+        }
+        public int product(int x,int y,int z) {
+            int prod=x*y*z;
+            return prod;
+        }
+        public double product(double x, double y) {
+            double prod=x*y;
+            return prod;
+        }
+    }
 }
-class Product
-{
-   public int product(int x, int y) {
-       int prod=x*y;
-       return prod;
-   } 
-   public int product(int x, int y, int z) {
-       int prod=x*y*z;
-       return prod;
-   }
-   public double product(double x, double y) {
-       double prod=x*y;
-       return prod;
-   }
-   
-}
+
